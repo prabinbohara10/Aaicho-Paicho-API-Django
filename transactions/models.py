@@ -21,8 +21,8 @@ class IncomeExpense(models.Model):
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateField(auto_now = True)
 
-def __str__(self):
-    return f"<Transcation {self.amount} in {self.transaction_type} by {self.user.email}>"
+    def __str__(self):
+        return f"<Transcation {self.amount} in {self.transaction_type} by {self.user.email}>"
 
 
 
